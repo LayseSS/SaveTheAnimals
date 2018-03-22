@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SaveTheAnimals</string>
+    <string name="campo_nome">Nome</string>
+    <string name="campo_raca">Raça</string>
+    <string name="campo_idade">Idade</string>
+    <string name="campo_peso">Peso</string>
+    <string name="botao_salvar">Salvar Dados do Animal</string>
+</resources>
