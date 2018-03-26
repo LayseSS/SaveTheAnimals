@@ -5,4 +5,6 @@
     <string name="campo_idade">Idade</string>
     <string name="campo_peso">Peso</string>
     <string name="botao_salvar">Salvar Dados do Animal</string>
+    <string name="campo_preencha">Preencha as informações abaixo corretamente: </string>
+
 </resources>

@@ -18,6 +18,13 @@
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/ic_launcher_foreground" />
 
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="@string/campo_preencha" />
+
         <EditText
             android:id="@+id/editTextNome"
             android:layout_width="match_parent"
@@ -66,6 +73,8 @@
             android:id="@+id/listViewAnimais"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+
 
 
     </LinearLayout>
