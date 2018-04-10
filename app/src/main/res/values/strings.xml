@@ -4,15 +4,5 @@
     <string name="campo_raca">Raça</string>
     <string name="campo_idade">Idade</string>
     <string name="campo_peso">Peso</string>
-    <string name="botao_salvar">Salvar dados dos animais</string>
-    <string name="botao_inicio">Iniciar</string>
-    <string name="campo_inicio">Clique no botão abaixo para iniciar</string>
-    <string name="botao_visualizar">Visualizar os dados dos animais</string>
-    <string name="campo_preencha">Preencha as informações abaixo corretamente: </string>
-    <string name="campo_escolha">Escolha a opção desejada abaixo: </string>
-    <string name="botao_cadastrar">Cadastrar os dados dos animais</string>
-    <string name="botao_visualizar2">Visualizar os dados dos animais</string>
-    <string name="botao_retornar">Voltar ao Menu</string>
-    <string name="campo_identificacao">Identificação do animal</string>
-    <string name="botao_deletar">Deletar dados do animal</string>
+    <string name="botao_salvar">Salvar Dados do Animal</string>
 </resources>
