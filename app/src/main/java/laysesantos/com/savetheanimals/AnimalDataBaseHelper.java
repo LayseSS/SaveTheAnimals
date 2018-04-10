@@ -28,5 +28,4 @@ public class AnimalDataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-
 }

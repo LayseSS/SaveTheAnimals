@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeletarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextoIdentificacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/campo_identificacao"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button_deletar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="deletarAnimal"
+            android:text="@string/botao_deletar"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <Button
+            android:id="@+id/button_visualizar"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_visualizar"
+            android:onClick="trocaTela5"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="60dp"/>
+
+        <Button
+            android:id="@+id/buttonAddNovoTelaListar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_retornar"
+            android:onClick="trocaTela6"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="60dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewInicio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/salvessanimais"
+            android:hint="@string/app_name" />
+
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

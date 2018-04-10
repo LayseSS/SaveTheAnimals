@@ -24,6 +24,7 @@ public class AnimalController {
     public String inserirDados(Animal animal) {
         db = dbAnimal.getReadableDatabase();
         ContentValues valores = new ContentValues();
+        //valores.put("identificacao", animal.getId());
         valores.put("nome", animal.getNome());
         valores.put("raca", animal.getRaca());
         valores.put("idade", animal.getIdade());
@@ -39,6 +40,19 @@ public class AnimalController {
         }
     }
 
+    public String deletarDados(Animal animal) {
+        db = dbAnimal.getReadableDatabase();
+
+        long resultado;
+        resultado = db.delete("animal", "id = " + animal.getId(), null);
+        db.close();
+        if (resultado <= 0) {
+            return "Erro ao deletar registro";
+        } else {
+            return "Registro deletado com sucesso";
+        }
+    }
+
     public List<Animal> listarDados() {
         db = dbAnimal.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM animal ORDER BY nome", null);
@@ -46,7 +60,7 @@ public class AnimalController {
         List<Animal> animalList = new ArrayList<Animal>();
         for (int i = 0; i < cursor.getCount(); i++) {
             Animal animal = new Animal();
-            animal.setIdade(cursor.getInt(0));
+            animal.setId(cursor.getInt(0));
             animal.setNome(cursor.getString(1));
             animal.setRaca(cursor.getString(2));
             animal.setIdade(cursor.getInt(3));
